@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tandoori Lu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+  <!-- Header Section Start -->
+  <nav class="bg-black py-2 md:py-4">
+    <div class="container px-4 mx-auto md:flex md:items-center">
+
+      <div class="flex justify-between items-center">
+        <a href="#" class="font-bold text-xl text-red-600">Tandoori LU</a>
+        <!-- <img src="logo.png" alt="Logo" className="fixed top-0"> -->
+        <button
+          class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
+          id="navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0" id="navbar-collapse">
+        <a href="#" class="p-2 lg:px-4 md:mx-2 text-white rounded bg-red-600">Home</a>
+        <a href="#"
+          class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">About</a>
+        <a href="#"
+          class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Gallery</a>
+        <a href="#"
+          class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Order
+          Online</a>
+        <a href="#"
+          class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Booking</a>
+        <a href="#"
+          class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Contact
+          Us</a>
+        <a href="#"
+          class="p-2 lg:px-4 md:mx-2 text-red-600 text-center border border-transparent rounded hover:bg-red-600 hover:text-white transition-colors duration-300">Login</a>
+        <a href="#"
+          class="p-2 lg:px-4 md:mx-2 text-red-600 text-center border border-solid border-red-600 rounded hover:bg-red-600 hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1">Signup</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section End -->
+
+  <!-- Middle Section Start -->
+  <div class="grid grid-cols-12 gap-6">
+    <div class="ltablet:col-span-8 col-span-12 lg:col-span-8">
+      <div class="flex flex-col gap-6">
+        <div class="col-span-12">
+          <div class="bg-red-800 flex flex-col items-center rounded-2xl p-4 sm:flex-row">
+            <!-- <img src="https://bonmasala.com/wp-content/uploads/2022/01/Tandoori-chicken-masala.jpg" alt=""
+              height="100px" width="300px"> -->
+            <div class="relative h-[120px] w-[240px] shrink-0 sm:h-[175px]">
+              <img class="pointer-events-none absolute -top-6 start-3 sm:-start-10 sm:-top-2" src="tandoori-1.png"
+                alt="Food illustration">
+            </div>
+            <div class="mt-6 grow sm:mt-0">
+              <div class="pb-4 text-center sm:pb-0 sm:text-left">
+                <p class="font-heading text-xl font-semibold leading-normal leading-normal mb-2 text-white opacity-90"
+                  tag="h1">
+                  <span> Free Delivery</span>
+                </p>
+                <p class="font-alt text-sm font-normal leading-normal leading-normal max-w-xs text-white opacity-70">
+                  <span> Don&#39;t miss out our $0 delivery fee for orders over $10 for 30 days.
+                    This one&#39;s for you! </span>
+                </p>
+                <div class="mt-2">
+                  <button type="button"
+                    class="px-2 py-2rounded text-white hover:enabled:text-muted-700 border-2 border-white hover:enabled:bg-black focus-within:outline-danger-white/70 focus-visible:outline-danger-white/70 focus-visible:bg-white focus-visible:text-black-700 active:enabled:text-muted-700 active:enabled:bg-white w-full sm:w-auto"
+                    size="sm">
+                    <span>Learn More</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="mb-6 flex items-center justify-between">
+            <p class="font-heading text-xl font-semibold leading-normal leading-normal" tag="h3">
+              <span>Popular Meals</span>
+            </p><button
+              class="bg-red-500/10 hover:bg-red-500/20 text-red-600 inline-flex cursor-pointer items-center justify-center gap-x-1 rounded-full py-2 pe-4 ps-2 font-sans text-sm transition-all duration-300"><svg
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                role="img" class="icon h-5 w-5" style="" width="1em" height="1em" viewBox="0 0 256 256" data-v-cd102a71>
+                <g fill="currentColor">
+                  <path d="M216 136a88 88 0 1 1-88-88a88 88 0 0 1 88 88Z" opacity=".2" />
+                  <path
+                    d="M128 40a96 96 0 1 0 96 96a96.11 96.11 0 0 0-96-96Zm0 176a80 80 0 1 1 80-80a80.09 80.09 0 0 1-80 80Zm45.66-125.66a8 8 0 0 1 0 11.32l-40 40a8 8 0 0 1-11.32-11.32l40-40a8 8 0 0 1 11.32 0ZM96 16a8 8 0 0 1 8-8h48a8 8 0 0 1 0 16h-48a8 8 0 0 1-8-8Z" />
+                </g>
+              </svg><span class="text-sm">Delivery:</span><span>~ 25min</span></button>
+          </div>
+          <div class="mb-14 grid grid-cols-4 gap-4 sm:grid-cols-9"><!--[-->
+            <div role="button"
+              class="bg-yellow-400 border-yellow-400 flex cursor-pointer flex-col items-center rounded-full border p-2 shadow-xl transition-colors duration-500 ease-in-out">
+              <div
+                class="bg-white border-yellow-400 rounded-full border p-2 transition-colors duration-500 ease-in-out">
+                <img src="https://tairo.cssninja.io/img/icons/food/icon-1.svg" alt="Food type icon"
+                  class="h-12 w-12 scale-[0.8]">
+              </div>
+              <p class="mb-10 mt-3 text-xs font-bold">All</p>
+            </div>
+            <div role="button"
+              class="border-muted-200 dark:border-muted-700 hover:bg-muted-200/80 dark:hover:bg-muted-800/40 flex cursor-pointer flex-col items-center rounded-full border p-2 shadow-xl transition-colors duration-500 ease-in-out">
+              <div
+                class="border-muted-200 dark:border-muted-800 bg-white dark:bg-muted-800 rounded-full border p-2 transition-colors duration-500 ease-in-out">
+                <img src="https://tairo.cssninja.io/img/icons/food/icon-2.svg" alt="Food type icon"
+                  class="dark:invert h-12 w-12 scale-[0.8]">
+              </div>
+              <p class="mb-10 mt-3 text-xs font-bold">Pizza</p>
+            </div>
+            <div role="button"
+              class="border-muted-200 dark:border-muted-700 hover:bg-muted-200/80 dark:hover:bg-muted-800/40 flex cursor-pointer flex-col items-center rounded-full border p-2 shadow-xl transition-colors duration-500 ease-in-out">
+              <div
+                class="border-muted-200 dark:border-muted-800 bg-white dark:bg-muted-800 rounded-full border p-2 transition-colors duration-500 ease-in-out">
+                <img src="https://tairo.cssninja.io/img/icons/food/icon-3.svg" alt="Food type icon"
+                  class="dark:invert h-12 w-12 scale-[0.8]">
+              </div>
+              <p class="mb-10 mt-3 text-xs font-bold">Asian</p>
+            </div>
+            <div role="button"
+              class="border-muted-200 dark:border-muted-700 hover:bg-muted-200/80 dark:hover:bg-muted-800/40 flex cursor-pointer flex-col items-center rounded-full border p-2 shadow-xl transition-colors duration-500 ease-in-out">
+              <div
+                class="border-muted-200 dark:border-muted-800 bg-white dark:bg-muted-800 rounded-full border p-2 transition-colors duration-500 ease-in-out">
+                <img src="https://tairo.cssninja.io/img/icons/food/icon-4.svg" alt="Food type icon"
+                  class="dark:invert h-12 w-12 scale-[0.8]">
+              </div>
+              <p class="mb-10 mt-3 text-xs font-bold">Burgers</p>
+            </div>
+            <div role="button"
+              class="border-muted-200 dark:border-muted-700 hover:bg-muted-200/80 dark:hover:bg-muted-800/40 flex cursor-pointer flex-col items-center rounded-full border p-2 shadow-xl transition-colors duration-500 ease-in-out">
+              <div
+                class="border-muted-200 dark:border-muted-800 bg-white dark:bg-muted-800 rounded-full border p-2 transition-colors duration-500 ease-in-out">
+                <img src="https://tairo.cssninja.io/img/icons/food/icon-5.svg" alt="Food type icon"
+                  class="dark:invert h-12 w-12 scale-[0.8]">
+              </div>
+              <p class="mb-10 mt-3 text-xs font-bold">Grill</p>
+            </div>
+            <div role="button"
+              class="border-muted-200 dark:border-muted-700 hover:bg-muted-200/80 dark:hover:bg-muted-800/40 flex cursor-pointer flex-col items-center rounded-full border p-2 shadow-xl transition-colors duration-500 ease-in-out">
+              <div
+                class="border-muted-200 dark:border-muted-800 bg-white dark:bg-muted-800 rounded-full border p-2 transition-colors duration-500 ease-in-out">
+                <img src="https://tairo.cssninja.io/img/icons/food/icon-6.svg" alt="Food type icon"
+                  class="dark:invert h-12 w-12 scale-[0.8]">
+              </div>
+              <p class="mb-10 mt-3 text-xs font-bold">Sweets</p>
+            </div>
+            <div role="button"
+              class="border-muted-200 dark:border-muted-700 hover:bg-muted-200/80 dark:hover:bg-muted-800/40 flex cursor-pointer flex-col items-center rounded-full border p-2 shadow-xl transition-colors duration-500 ease-in-out">
+              <div
+                class="border-muted-200 dark:border-muted-800 bg-white dark:bg-muted-800 rounded-full border p-2 transition-colors duration-500 ease-in-out">
+                <img src="https://tairo.cssninja.io/img/icons/food/icon-7.svg" alt="Food type icon"
+                  class="dark:invert h-12 w-12 scale-[0.8]">
+              </div>
+              <p class="mb-10 mt-3 text-xs font-bold">Thai</p>
+            </div>
+            <div role="button"
+              class="border-muted-200 dark:border-muted-700 hover:bg-muted-200/80 dark:hover:bg-muted-800/40 flex cursor-pointer flex-col items-center rounded-full border p-2 shadow-xl transition-colors duration-500 ease-in-out">
+              <div
+                class="border-muted-200 dark:border-muted-800 bg-white dark:bg-muted-800 rounded-full border p-2 transition-colors duration-500 ease-in-out">
+                <img src="https://tairo.cssninja.io/img/icons/food/icon-8.svg" alt="Food type icon"
+                  class="dark:invert h-12 w-12 scale-[0.8]">
+              </div>
+              <p class="mb-10 mt-3 text-xs font-bold">Sushi</p>
+            </div>
+            <div class="hidden items-center justify-center sm:flex"><button type="button"
+                class="disabled:opacity-60 disabled:cursor-not-allowed hover:shadow-none false false text-muted-700 bg-white border border-muted-300 dark:text-white dark:bg-muted-700 dark:hover:bg-muted-600 dark:border-muted-600 hover:bg-muted-50 rounded-full h-10 w-10 p-2 nui-focus relative inline-flex items-center justify-center space-x-1 font-sans text-sm font-normal leading-5 no-underline outline-none transition-all duration-300 hover:border-yellow-500 hover:text-yellow-500"
+                data-tooltip="All categories">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                  role="img" class="icon h-4 w-4" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-cd102a71>
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="m9 18l6-6l-6-6" />
+                </svg>
+              </button></div>
+          </div>
+
+          <div class="grid gap-x-3 gap-y-6 sm:grid-cols-3">
+            <a aria-current="page" href="#" class="router-link-active router-link-exact-active relative">
+              <div
+                class="border-muted-200 dark:border-muted-700 dark:bg-muted-800 relative w-full border bg-white transition-all duration-300 rounded-xl hover:border-red-500 hover:shadow-muted-300/30 dark:hover:shadow-muted-900/40 p-3 hover:shadow-xl">
+                <div class="ltablet:h-28 bg-muted-100 dark:bg-muted-900 relative mb-3 h-36 w-full rounded-xl sm:h-32">
+                  <img class="max-w-[175px] absolute inset-x-0 -top-4 mx-auto max-w-[210px] sm:-top-6 sm:max-w-[190px]"
+                    src="https://www.licious.in/blog/wp-content/uploads/2020/12/Tandoori-Chicken-750x750.jpg"
+                    alt="Buritos Duo">
+                </div>
+                <div class="my-4">
+                  <p class="font-heading text-sm font-medium leading-normal leading-normal text-muted-800 dark:text-muted-100"
+                    tag="h4">
+                    Buritos Duo</p>
+                  <p
+                    class="font-alt text-xs font-normal leading-normal leading-normal text-muted-500 dark:text-muted-400 line-clamp-1">
+                    <!--[--><span>Tomato sauce, mozzarella, basil, olive oil</span><!--]-->
+                  </p>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="divide-muted-200 dark:divide-muted-700 flex items-center divide-x">
+                    <div class="pe-4"><span class="text-muted-800 dark:text-muted-100 font-sans font-bold"> $9.99</span>
+                    </div>
+                    <div class="flex items-center gap-1 ps-4"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                        class="icon h-3 w-3 text-yellow-400" style="" width="1em" height="1em" viewBox="0 0 20 20"
+                        data-v-cd102a71>
+                        <path fill="currentColor"
+                          d="m9.89 17.514l-4.21 2.257l-.099.044c-.715.27-1.39.216-1.903-.242c-.482-.43-.657-1.046-.557-1.755l.704-4.86l-3.18-3.342c-.55-.56-.765-1.248-.58-1.968c.205-.799.88-1.258 1.851-1.412l4.227-.638l2.213-4.585C8.7.366 9.236-.017 9.911.001c.66.017 1.183.422 1.593 1.143l2.14 4.486l4.74.658c.753.13 1.308.522 1.53 1.176c.22.653.01 1.313-.557 1.987l-3.44 3.51l.772 4.856c.122.84-.025 1.505-.586 1.9c-.506.357-1.139.357-1.867.107l-.12-.053l-4.226-2.257Z" />
+                      </svg><span class="text-muted-400 font-sans text-xs">4.5 (12) </span></div>
+                  </div>
+                  <div><button type="button"
+                      class="relative font-sans font-normal text-sm inline-flex items-center justify-center leading-5 no-underline h-8 px-3 py-2 space-x-1 border nui-focus transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed hover:enabled:shadow-none text-muted-700 bg-white border-muted-300 dark:text-white dark:bg-muted-700 dark:border-muted-600 dark:hover:enabled:bg-muted-600 hover:enabled:bg-muted-50 dark:active:enabled:bg-muted-700/70 active:enabled:bg-muted-100 rounded-xl"><!--[--><span>Order</span><!--]--></button>
+                  </div>
+                </div><!--]-->
+              </div>
+            </a><a aria-current="page" href="delivery.html#"
+              class="router-link-active router-link-exact-active relative">
+              <div
+                class="border-muted-200 dark:border-muted-700 dark:bg-muted-800 relative w-full border bg-white transition-all duration-300 rounded-xl hover:border-red-500 hover:shadow-muted-300/30 dark:hover:shadow-muted-900/40 p-3 hover:shadow-xl">
+                <!--[-->
+                <div class="ltablet:h-28 bg-muted-100 dark:bg-muted-900 relative mb-3 h-36 w-full rounded-xl sm:h-32">
+                  <img
+                    class="ltablet:max-w-[175px] absolute inset-x-0 -top-4 mx-auto max-w-[210px] sm:-top-6 sm:max-w-[190px]"
+                    src="../img/illustrations/dashboards/delivery/meal-2.png" alt="Chop Chop Suite">
+                </div>
+                <div class="mb-2">
+                  <p class="font-heading text-sm font-medium leading-normal leading-normal text-muted-800 dark:text-muted-100"
+                    tag="h4"><!--[--><span>Chop Chop Suite</span><!--]--></p>
+                  <p
+                    class="font-alt text-xs font-normal leading-normal leading-normal text-muted-500 dark:text-muted-400 line-clamp-1">
+                    <!--[--><span>Sushi, salmon, avocado, cucumber, rice</span><!--]-->
+                  </p>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="divide-muted-200 dark:divide-muted-700 flex items-center divide-x">
+                    <div class="pe-4"><span class="text-muted-800 dark:text-muted-100 font-sans font-bold">
+                        $25.99</span>
+                    </div>
+                    <div class="flex items-center gap-1 ps-4"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                        class="icon h-3 w-3 text-yellow-400" style="" width="1em" height="1em" viewBox="0 0 20 20"
+                        data-v-cd102a71>
+                        <path fill="currentColor"
+                          d="m9.89 17.514l-4.21 2.257l-.099.044c-.715.27-1.39.216-1.903-.242c-.482-.43-.657-1.046-.557-1.755l.704-4.86l-3.18-3.342c-.55-.56-.765-1.248-.58-1.968c.205-.799.88-1.258 1.851-1.412l4.227-.638l2.213-4.585C8.7.366 9.236-.017 9.911.001c.66.017 1.183.422 1.593 1.143l2.14 4.486l4.74.658c.753.13 1.308.522 1.53 1.176c.22.653.01 1.313-.557 1.987l-3.44 3.51l.772 4.856c.122.84-.025 1.505-.586 1.9c-.506.357-1.139.357-1.867.107l-.12-.053l-4.226-2.257Z" />
+                      </svg><span class="text-muted-400 font-sans text-xs">4.8 (47) </span></div>
+                  </div>
+                  <div><button type="button"
+                      class="relative font-sans font-normal text-sm inline-flex items-center justify-center leading-5 no-underline h-8 px-3 py-2 space-x-1 border nui-focus transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed hover:enabled:shadow-none text-muted-700 bg-white border-muted-300 dark:text-white dark:bg-muted-700 dark:border-muted-600 dark:hover:enabled:bg-muted-600 hover:enabled:bg-muted-50 dark:active:enabled:bg-muted-700/70 active:enabled:bg-muted-100 rounded-xl"><!--[--><span>Order</span><!--]--></button>
+                  </div>
+                </div><!--]-->
+              </div>
+            </a><a aria-current="page" href="delivery.html#"
+              class="router-link-active router-link-exact-active relative">
+              <div
+                class="border-muted-200 dark:border-muted-700 dark:bg-muted-800 relative w-full border bg-white transition-all duration-300 rounded-xl hover:border-red-500 hover:shadow-muted-300/30 dark:hover:shadow-muted-900/40 p-3 hover:shadow-xl">
+                <!--[-->
+                <div class="ltablet:h-28 bg-muted-100 dark:bg-muted-900 relative mb-3 h-36 w-full rounded-xl sm:h-32">
+                  <img
+                    class="ltablet:max-w-[175px] absolute inset-x-0 -top-4 mx-auto max-w-[210px] sm:-top-6 sm:max-w-[190px]"
+                    src="../img/illustrations/dashboards/delivery/meal-3.png" alt="Double Cheese Burger">
+                </div>
+                <div class="mb-2">
+                  <p class="font-heading text-sm font-medium leading-normal leading-normal text-muted-800 dark:text-muted-100"
+                    tag="h4"><!--[--><span>Double Cheese Burger</span><!--]--></p>
+                  <p
+                    class="font-alt text-xs font-normal leading-normal leading-normal text-muted-500 dark:text-muted-400 line-clamp-1">
+                    <!--[--><span>Beef, cheese, lettuce, tomato, onion, ketchup</span><!--]-->
+                  </p>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="divide-muted-200 dark:divide-muted-700 flex items-center divide-x">
+                    <div class="pe-4"><span class="text-muted-800 dark:text-muted-100 font-sans font-bold">
+                        $14.99</span>
+                    </div>
+                    <div class="flex items-center gap-1 ps-4"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                        class="icon h-3 w-3 text-yellow-400" style="" width="1em" height="1em" viewBox="0 0 20 20"
+                        data-v-cd102a71>
+                        <path fill="currentColor"
+                          d="m9.89 17.514l-4.21 2.257l-.099.044c-.715.27-1.39.216-1.903-.242c-.482-.43-.657-1.046-.557-1.755l.704-4.86l-3.18-3.342c-.55-.56-.765-1.248-.58-1.968c.205-.799.88-1.258 1.851-1.412l4.227-.638l2.213-4.585C8.7.366 9.236-.017 9.911.001c.66.017 1.183.422 1.593 1.143l2.14 4.486l4.74.658c.753.13 1.308.522 1.53 1.176c.22.653.01 1.313-.557 1.987l-3.44 3.51l.772 4.856c.122.84-.025 1.505-.586 1.9c-.506.357-1.139.357-1.867.107l-.12-.053l-4.226-2.257Z" />
+                      </svg><span class="text-muted-400 font-sans text-xs">4.9 (172) </span></div>
+                  </div>
+                  <div><button type="button"
+                      class="relative font-sans font-normal text-sm inline-flex items-center justify-center leading-5 no-underline h-8 px-3 py-2 space-x-1 border nui-focus transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed hover:enabled:shadow-none text-muted-700 bg-white border-muted-300 dark:text-white dark:bg-muted-700 dark:border-muted-600 dark:hover:enabled:bg-muted-600 hover:enabled:bg-muted-50 dark:active:enabled:bg-muted-700/70 active:enabled:bg-muted-100 rounded-xl"><!--[--><span>Order</span><!--]--></button>
+                  </div>
+                </div><!--]-->
+              </div>
+            </a><a aria-current="page" href="delivery.html#"
+              class="router-link-active router-link-exact-active relative">
+              <div
+                class="border-muted-200 dark:border-muted-700 dark:bg-muted-800 relative w-full border bg-white transition-all duration-300 rounded-xl hover:border-red-500 hover:shadow-muted-300/30 dark:hover:shadow-muted-900/40 p-3 hover:shadow-xl">
+                <!--[-->
+                <div class="ltablet:h-28 bg-muted-100 dark:bg-muted-900 relative mb-3 h-36 w-full rounded-xl sm:h-32">
+                  <img
+                    class="ltablet:max-w-[175px] absolute inset-x-0 -top-4 mx-auto max-w-[210px] sm:-top-6 sm:max-w-[190px]"
+                    src="../img/illustrations/dashboards/delivery/meal-4.png" alt="Sweet n&#39; Donuts">
+                </div>
+                <div class="mb-2">
+                  <p class="font-heading text-sm font-medium leading-normal leading-normal text-muted-800 dark:text-muted-100"
+                    tag="h4"><!--[--><span>Sweet n&#39; Donuts</span><!--]--></p>
+                  <p
+                    class="font-alt text-xs font-normal leading-normal leading-normal text-muted-500 dark:text-muted-400 line-clamp-1">
+                    <!--[--><span>Donuts, chocolate, strawberry, vanilla, sugar</span><!--]-->
+                  </p>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="divide-muted-200 dark:divide-muted-700 flex items-center divide-x">
+                    <div class="pe-4"><span class="text-muted-800 dark:text-muted-100 font-sans font-bold"> $9.99</span>
+                    </div>
+                    <div class="flex items-center gap-1 ps-4"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                        class="icon h-3 w-3 text-yellow-400" style="" width="1em" height="1em" viewBox="0 0 20 20"
+                        data-v-cd102a71>
+                        <path fill="currentColor"
+                          d="m9.89 17.514l-4.21 2.257l-.099.044c-.715.27-1.39.216-1.903-.242c-.482-.43-.657-1.046-.557-1.755l.704-4.86l-3.18-3.342c-.55-.56-.765-1.248-.58-1.968c.205-.799.88-1.258 1.851-1.412l4.227-.638l2.213-4.585C8.7.366 9.236-.017 9.911.001c.66.017 1.183.422 1.593 1.143l2.14 4.486l4.74.658c.753.13 1.308.522 1.53 1.176c.22.653.01 1.313-.557 1.987l-3.44 3.51l.772 4.856c.122.84-.025 1.505-.586 1.9c-.506.357-1.139.357-1.867.107l-.12-.053l-4.226-2.257Z" />
+                      </svg><span class="text-muted-400 font-sans text-xs">4.9 (56) </span></div>
+                  </div>
+                  <div><button type="button"
+                      class="relative font-sans font-normal text-sm inline-flex items-center justify-center leading-5 no-underline h-8 px-3 py-2 space-x-1 border nui-focus transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed hover:enabled:shadow-none text-muted-700 bg-white border-muted-300 dark:text-white dark:bg-muted-700 dark:border-muted-600 dark:hover:enabled:bg-muted-600 hover:enabled:bg-muted-50 dark:active:enabled:bg-muted-700/70 active:enabled:bg-muted-100 rounded-xl"><!--[--><span>Order</span><!--]--></button>
+                  </div>
+                </div><!--]-->
+              </div>
+            </a><a aria-current="page" href="delivery.html#"
+              class="router-link-active router-link-exact-active relative">
+              <div
+                class="border-muted-200 dark:border-muted-700 dark:bg-muted-800 relative w-full border bg-white transition-all duration-300 rounded-xl hover:border-red-500 hover:shadow-muted-300/30 dark:hover:shadow-muted-900/40 p-3 hover:shadow-xl">
+                <!--[-->
+                <div class="ltablet:h-28 bg-muted-100 dark:bg-muted-900 relative mb-3 h-36 w-full rounded-xl sm:h-32">
+                  <img
+                    class="ltablet:max-w-[175px] absolute inset-x-0 -top-4 mx-auto max-w-[210px] sm:-top-6 sm:max-w-[190px]"
+                    src="../img/illustrations/dashboards/delivery/meal-5.png" alt="Sweet n&#39; Milkshake">
+                </div>
+                <div class="mb-2">
+                  <p class="font-heading text-sm font-medium leading-normal leading-normal text-muted-800 dark:text-muted-100"
+                    tag="h4"><!--[--><span>Sweet n&#39; Milkshake</span><!--]--></p>
+                  <p
+                    class="font-alt text-xs font-normal leading-normal leading-normal text-muted-500 dark:text-muted-400 line-clamp-1">
+                    <!--[--><span>Milkshake, chocolate, strawberry, vanilla, sugar</span><!--]-->
+                  </p>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="divide-muted-200 dark:divide-muted-700 flex items-center divide-x">
+                    <div class="pe-4"><span class="text-muted-800 dark:text-muted-100 font-sans font-bold">
+                        $16.99</span>
+                    </div>
+                    <div class="flex items-center gap-1 ps-4"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                        class="icon h-3 w-3 text-yellow-400" style="" width="1em" height="1em" viewBox="0 0 20 20"
+                        data-v-cd102a71>
+                        <path fill="currentColor"
+                          d="m9.89 17.514l-4.21 2.257l-.099.044c-.715.27-1.39.216-1.903-.242c-.482-.43-.657-1.046-.557-1.755l.704-4.86l-3.18-3.342c-.55-.56-.765-1.248-.58-1.968c.205-.799.88-1.258 1.851-1.412l4.227-.638l2.213-4.585C8.7.366 9.236-.017 9.911.001c.66.017 1.183.422 1.593 1.143l2.14 4.486l4.74.658c.753.13 1.308.522 1.53 1.176c.22.653.01 1.313-.557 1.987l-3.44 3.51l.772 4.856c.122.84-.025 1.505-.586 1.9c-.506.357-1.139.357-1.867.107l-.12-.053l-4.226-2.257Z" />
+                      </svg><span class="text-muted-400 font-sans text-xs">4.8 (32) </span></div>
+                  </div>
+                  <div><button type="button"
+                      class="relative font-sans font-normal text-sm inline-flex items-center justify-center leading-5 no-underline h-8 px-3 py-2 space-x-1 border nui-focus transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed hover:enabled:shadow-none text-muted-700 bg-white border-muted-300 dark:text-white dark:bg-muted-700 dark:border-muted-600 dark:hover:enabled:bg-muted-600 hover:enabled:bg-muted-50 dark:active:enabled:bg-muted-700/70 active:enabled:bg-muted-100 rounded-xl"><!--[--><span>Order</span><!--]--></button>
+                  </div>
+                </div><!--]-->
+              </div>
+            </a><a aria-current="page" href="delivery.html#"
+              class="router-link-active router-link-exact-active relative">
+              <div
+                class="border-muted-200 dark:border-muted-700 dark:bg-muted-800 relative w-full border bg-white transition-all duration-300 rounded-xl hover:border-red-500 hover:shadow-muted-300/30 dark:hover:shadow-muted-900/40 p-3 hover:shadow-xl">
+                <!--[-->
+                <div class="ltablet:h-28 bg-muted-100 dark:bg-muted-900 relative mb-3 h-36 w-full rounded-xl sm:h-32">
+                  <img
+                    class="ltablet:max-w-[175px] absolute inset-x-0 -top-4 mx-auto max-w-[210px] sm:-top-6 sm:max-w-[190px]"
+                    src="../img/illustrations/dashboards/delivery/meal-6.png" alt="Fried Chicken Bucket">
+                </div>
+                <div class="mb-2">
+                  <p class="font-heading text-sm font-medium leading-normal leading-normal text-muted-800 dark:text-muted-100"
+                    tag="h4"><!--[--><span>Fried Chicken Bucket</span><!--]--></p>
+                  <p
+                    class="font-alt text-xs font-normal leading-normal leading-normal text-muted-500 dark:text-muted-400 line-clamp-1">
+                    <!--[--><span>Chicken, barbecue sauce, ketchup, soda</span><!--]-->
+                  </p>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="divide-muted-200 dark:divide-muted-700 flex items-center divide-x">
+                    <div class="pe-4"><span class="text-muted-800 dark:text-muted-100 font-sans font-bold">
+                        $12.99</span>
+                    </div>
+                    <div class="flex items-center gap-1 ps-4"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                        class="icon h-3 w-3 text-yellow-400" style="" width="1em" height="1em" viewBox="0 0 20 20"
+                        data-v-cd102a71>
+                        <path fill="currentColor"
+                          d="m9.89 17.514l-4.21 2.257l-.099.044c-.715.27-1.39.216-1.903-.242c-.482-.43-.657-1.046-.557-1.755l.704-4.86l-3.18-3.342c-.55-.56-.765-1.248-.58-1.968c.205-.799.88-1.258 1.851-1.412l4.227-.638l2.213-4.585C8.7.366 9.236-.017 9.911.001c.66.017 1.183.422 1.593 1.143l2.14 4.486l4.74.658c.753.13 1.308.522 1.53 1.176c.22.653.01 1.313-.557 1.987l-3.44 3.51l.772 4.856c.122.84-.025 1.505-.586 1.9c-.506.357-1.139.357-1.867.107l-.12-.053l-4.226-2.257Z" />
+                      </svg><span class="text-muted-400 font-sans text-xs">4.5 (59) </span></div>
+                  </div>
+                  <div><button type="button"
+                      class="relative font-sans font-normal text-sm inline-flex items-center justify-center leading-5 no-underline h-8 px-3 py-2 space-x-1 border nui-focus transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed hover:enabled:shadow-none text-muted-700 bg-white border-muted-300 dark:text-white dark:bg-muted-700 dark:border-muted-600 dark:hover:enabled:bg-muted-600 hover:enabled:bg-muted-50 dark:active:enabled:bg-muted-700/70 active:enabled:bg-muted-100 rounded-xl"><!--[--><span>Order</span><!--]--></button>
+                  </div>
+                </div><!--]-->
+              </div>
+            </a><a aria-current="page" href="delivery.html#"
+              class="router-link-active router-link-exact-active relative">
+              <div
+                class="border-muted-200 dark:border-muted-700 dark:bg-muted-800 relative w-full border bg-white transition-all duration-300 rounded-xl hover:border-red-500 hover:shadow-muted-300/30 dark:hover:shadow-muted-900/40 p-3 hover:shadow-xl">
+                <!--[-->
+                <div class="ltablet:h-28 bg-muted-100 dark:bg-muted-900 relative mb-3 h-36 w-full rounded-xl sm:h-32">
+                  <img
+                    class="ltablet:max-w-[175px] absolute inset-x-0 -top-4 mx-auto max-w-[210px] sm:-top-6 sm:max-w-[190px]"
+                    src="../img/illustrations/dashboards/delivery/meal-7.png" alt="Peperoni Slice">
+                </div>
+                <div class="mb-2">
+                  <p class="font-heading text-sm font-medium leading-normal leading-normal text-muted-800 dark:text-muted-100"
+                    tag="h4"><!--[--><span>Peperoni Slice</span><!--]--></p>
+                  <p
+                    class="font-alt text-xs font-normal leading-normal leading-normal text-muted-500 dark:text-muted-400 line-clamp-1">
+                    <!--[--><span>Tomato sauce, mozzarella, basil, olive oil</span><!--]-->
+                  </p>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="divide-muted-200 dark:divide-muted-700 flex items-center divide-x">
+                    <div class="pe-4"><span class="text-muted-800 dark:text-muted-100 font-sans font-bold"> $5.99</span>
+                    </div>
+                    <div class="flex items-center gap-1 ps-4"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                        class="icon h-3 w-3 text-yellow-400" style="" width="1em" height="1em" viewBox="0 0 20 20"
+                        data-v-cd102a71>
+                        <path fill="currentColor"
+                          d="m9.89 17.514l-4.21 2.257l-.099.044c-.715.27-1.39.216-1.903-.242c-.482-.43-.657-1.046-.557-1.755l.704-4.86l-3.18-3.342c-.55-.56-.765-1.248-.58-1.968c.205-.799.88-1.258 1.851-1.412l4.227-.638l2.213-4.585C8.7.366 9.236-.017 9.911.001c.66.017 1.183.422 1.593 1.143l2.14 4.486l4.74.658c.753.13 1.308.522 1.53 1.176c.22.653.01 1.313-.557 1.987l-3.44 3.51l.772 4.856c.122.84-.025 1.505-.586 1.9c-.506.357-1.139.357-1.867.107l-.12-.053l-4.226-2.257Z" />
+                      </svg><span class="text-muted-400 font-sans text-xs">4.8 (75) </span></div>
+                  </div>
+                  <div><button type="button"
+                      class="relative font-sans font-normal text-sm inline-flex items-center justify-center leading-5 no-underline h-8 px-3 py-2 space-x-1 border nui-focus transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed hover:enabled:shadow-none text-muted-700 bg-white border-muted-300 dark:text-white dark:bg-muted-700 dark:border-muted-600 dark:hover:enabled:bg-muted-600 hover:enabled:bg-muted-50 dark:active:enabled:bg-muted-700/70 active:enabled:bg-muted-100 rounded-xl"><!--[--><span>Order</span><!--]--></button>
+                  </div>
+                </div><!--]-->
+              </div>
+            </a><a aria-current="page" href="delivery.html#"
+              class="router-link-active router-link-exact-active relative">
+              <div
+                class="border-muted-200 dark:border-muted-700 dark:bg-muted-800 relative w-full border bg-white transition-all duration-300 rounded-xl hover:border-red-500 hover:shadow-muted-300/30 dark:hover:shadow-muted-900/40 p-3 hover:shadow-xl">
+                <!--[-->
+                <div class="ltablet:h-28 bg-muted-100 dark:bg-muted-900 relative mb-3 h-36 w-full rounded-xl sm:h-32">
+                  <img
+                    class="ltablet:max-w-[175px] absolute inset-x-0 -top-4 mx-auto max-w-[210px] sm:-top-6 sm:max-w-[190px]"
+                    src="../img/illustrations/dashboards/delivery/meal-8.png" alt="Veggie Wrap">
+                </div>
+                <div class="mb-2">
+                  <p class="font-heading text-sm font-medium leading-normal leading-normal text-muted-800 dark:text-muted-100"
+                    tag="h4"><!--[--><span>Veggie Wrap</span><!--]--></p>
+                  <p
+                    class="font-alt text-xs font-normal leading-normal leading-normal text-muted-500 dark:text-muted-400 line-clamp-1">
+                    <!--[--><span>Tomato, mozzarella, basil, olive oil</span><!--]-->
+                  </p>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="divide-muted-200 dark:divide-muted-700 flex items-center divide-x">
+                    <div class="pe-4"><span class="text-muted-800 dark:text-muted-100 font-sans font-bold"> $8.99</span>
+                    </div>
+                    <div class="flex items-center gap-1 ps-4"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                        class="icon h-3 w-3 text-yellow-400" style="" width="1em" height="1em" viewBox="0 0 20 20"
+                        data-v-cd102a71>
+                        <path fill="currentColor"
+                          d="m9.89 17.514l-4.21 2.257l-.099.044c-.715.27-1.39.216-1.903-.242c-.482-.43-.657-1.046-.557-1.755l.704-4.86l-3.18-3.342c-.55-.56-.765-1.248-.58-1.968c.205-.799.88-1.258 1.851-1.412l4.227-.638l2.213-4.585C8.7.366 9.236-.017 9.911.001c.66.017 1.183.422 1.593 1.143l2.14 4.486l4.74.658c.753.13 1.308.522 1.53 1.176c.22.653.01 1.313-.557 1.987l-3.44 3.51l.772 4.856c.122.84-.025 1.505-.586 1.9c-.506.357-1.139.357-1.867.107l-.12-.053l-4.226-2.257Z" />
+                      </svg><span class="text-muted-400 font-sans text-xs">4.8 (112) </span></div>
+                  </div>
+                  <div><button type="button"
+                      class="relative font-sans font-normal text-sm inline-flex items-center justify-center leading-5 no-underline h-8 px-3 py-2 space-x-1 border nui-focus transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed hover:enabled:shadow-none text-muted-700 bg-white border-muted-300 dark:text-white dark:bg-muted-700 dark:border-muted-600 dark:hover:enabled:bg-muted-600 hover:enabled:bg-muted-50 dark:active:enabled:bg-muted-700/70 active:enabled:bg-muted-100 rounded-xl"><!--[--><span>Order</span><!--]--></button>
+                  </div>
+                </div><!--]-->
+              </div>
+            </a><a aria-current="page" href="delivery.html#"
+              class="router-link-active router-link-exact-active relative">
+              <div
+                class="border-muted-200 dark:border-muted-700 dark:bg-muted-800 relative w-full border bg-white transition-all duration-300 rounded-xl hover:border-red-500 hover:shadow-muted-300/30 dark:hover:shadow-muted-900/40 p-3 hover:shadow-xl">
+                <!--[-->
+                <div class="ltablet:h-28 bg-muted-100 dark:bg-muted-900 relative mb-3 h-36 w-full rounded-xl sm:h-32">
+                  <img
+                    class="ltablet:max-w-[175px] absolute inset-x-0 -top-4 mx-auto max-w-[210px] sm:-top-6 sm:max-w-[190px]"
+                    src="../img/illustrations/dashboards/delivery/meal-9.png" alt="Sashimi Special">
+                </div>
+                <div class="mb-2">
+                  <p class="font-heading text-sm font-medium leading-normal leading-normal text-muted-800 dark:text-muted-100"
+                    tag="h4"><!--[--><span>Sashimi Special</span><!--]--></p>
+                  <p
+                    class="font-alt text-xs font-normal leading-normal leading-normal text-muted-500 dark:text-muted-400 line-clamp-1">
+                    <!--[--><span>Sushi, salmon, avocado, cucumber, rice</span><!--]-->
+                  </p>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="divide-muted-200 dark:divide-muted-700 flex items-center divide-x">
+                    <div class="pe-4"><span class="text-muted-800 dark:text-muted-100 font-sans font-bold">
+                        $19.99</span>
+                    </div>
+                    <div class="flex items-center gap-1 ps-4"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                        class="icon h-3 w-3 text-yellow-400" style="" width="1em" height="1em" viewBox="0 0 20 20"
+                        data-v-cd102a71>
+                        <path fill="currentColor"
+                          d="m9.89 17.514l-4.21 2.257l-.099.044c-.715.27-1.39.216-1.903-.242c-.482-.43-.657-1.046-.557-1.755l.704-4.86l-3.18-3.342c-.55-.56-.765-1.248-.58-1.968c.205-.799.88-1.258 1.851-1.412l4.227-.638l2.213-4.585C8.7.366 9.236-.017 9.911.001c.66.017 1.183.422 1.593 1.143l2.14 4.486l4.74.658c.753.13 1.308.522 1.53 1.176c.22.653.01 1.313-.557 1.987l-3.44 3.51l.772 4.856c.122.84-.025 1.505-.586 1.9c-.506.357-1.139.357-1.867.107l-.12-.053l-4.226-2.257Z" />
+                      </svg><span class="text-muted-400 font-sans text-xs">4.9 (71) </span></div>
+                  </div>
+                  <div><button type="button"
+                      class="relative font-sans font-normal text-sm inline-flex items-center justify-center leading-5 no-underline h-8 px-3 py-2 space-x-1 border nui-focus transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed hover:enabled:shadow-none text-muted-700 bg-white border-muted-300 dark:text-white dark:bg-muted-700 dark:border-muted-600 dark:hover:enabled:bg-muted-600 hover:enabled:bg-muted-50 dark:active:enabled:bg-muted-700/70 active:enabled:bg-muted-100 rounded-xl"><!--[--><span>Order</span><!--]--></button>
+                  </div>
+                </div><!--]-->
+              </div>
+            </a><!--]-->
+          </div>
+          <div class="my-16 flex items-center justify-center"><button type="button"
+              class="is-button rounded-full is-button-default" data-v-71bb21a6><!--[--><svg
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                role="img" class="icon h-4 w-4" style="" width="1em" height="1em" viewBox="0 0 256 256" data-v-cd102a71>
+                <path fill="currentColor"
+                  d="M76 60a16 16 0 1 1-16-16a16 16 0 0 1 16 16Zm52-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16Zm68 32a16 16 0 1 0-16-16a16 16 0 0 0 16 16ZM60 112a16 16 0 1 0 16 16a16 16 0 0 0-16-16Zm68 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16Zm68 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16ZM60 180a16 16 0 1 0 16 16a16 16 0 0 0-16-16Zm68 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16Zm68 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16Z" />
+              </svg><span>Load more</span><!--]--></button></div>
+        </div>
+      </div>
+    </div>
+    <div class="ltablet:col-span-4 col-span-12 lg:col-span-4">
+      <div class="bg-muted-200 dark:bg-muted-800 flex flex-col gap-6 rounded-2xl p-6">
+        <div class="font-hairline rounded-2xl bg-red-800 p-6 text-xs">
+          <div class="mb-4 flex items-center gap-2">
+            <div class="relative inline-flex shrink-0 items-center justify-center outline-none h-8 w-8 rounded-full">
+              <div
+                class="rounded-full flex h-full w-full items-center justify-center overflow-hidden text-center transition-all duration-300">
+                <!--[--><img src="https://tairo.cssninja.io/img/avatars/2.svg"
+                  class="h-8 w-8 max-h-full max-w-full object-cover shadow-sm dark:border-transparent"><!----><!----><!--]-->
+              </div><!----><!---->
+            </div>
+            <div>
+              <h4 class="font-heading text-sm font-light leading-tight text-white"><!--[--><span>Maya
+                  Rosselini</span><!--]--></h4>
+              <p class="font-alt text-xs font-normal leading-normal leading-normal"><!--[--><span
+                  class="text-white/70">Complete your order</span><!--]--></p>
+            </div>
+          </div>
+          <div class="flex items-center justify-between font-sans">
+            <p class="text-white">112 Mc Cornell Av.</p><button type="button" class="cursor-pointer text-yellow-400">
+              Edit </button>
+          </div>
+          <div class="mt-4 flex items-center gap-2 font-sans">
+            <div class="rounded-lg py-1"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                class="icon h-5 w-5 text-yellow-400" style="" width="1em" height="1em" viewBox="0 0 256 256"
+                data-v-cd102a71>
+                <g fill="currentColor">
+                  <path d="M216 136a88 88 0 1 1-88-88a88 88 0 0 1 88 88Z" opacity=".2" />
+                  <path
+                    d="M128 40a96 96 0 1 0 96 96a96.11 96.11 0 0 0-96-96Zm0 176a80 80 0 1 1 80-80a80.09 80.09 0 0 1-80 80Zm45.66-125.66a8 8 0 0 1 0 11.32l-40 40a8 8 0 0 1-11.32-11.32l40-40a8 8 0 0 1 11.32 0ZM96 16a8 8 0 0 1 8-8h48a8 8 0 0 1 0 16h-48a8 8 0 0 1-8-8Z" />
+                </g>
+              </svg></div>
+            <p class="text-white">35 min</p><button type="button" class="ms-auto cursor-pointer text-yellow-400"> Choose
+              time </button>
+          </div>
+        </div>
+        <div>
+          <p class="font-heading text-xl font-medium leading-normal leading-normal text-muted-800 dark:text-muted-100"
+            tag="h3"><!--[--><span>My Order</span><!--]--></p>
+        </div>
+        <ul class="space-y-4"><!--[-->
+          <li>
+            <div class="flex items-center gap-3">
+              <div
+                class="border-muted-200 dark:border-muted-700 dark:bg-muted-900 relative flex h-14 w-14 items-center justify-center rounded-xl border bg-white">
+                <img src="../img/illustrations/dashboards/delivery/meal-8.png" alt="Veggie Wrap"
+                  class="h-12 w-12 object-contain">
+                <div class="bg-red-500 absolute -bottom-1 -end-1 flex h-6 w-6 items-center justify-center rounded-full">
+                  <span class="font-sans text-[0.65rem] font-semibold text-white"> x2</span>
+                </div>
+              </div>
+              <div>
+                <p class="text-muted-800 dark:text-muted-100 font-sans text-sm">Veggie Wrap</p>
+                <p class="text-muted-400 font-sans text-xs"> unit price: $8.99</p>
+              </div>
+              <div class="ms-auto">
+                <p class="text-muted-800 dark:text-muted-100 font-sans text-sm font-semibold"> $17.98</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center gap-3">
+              <div
+                class="border-muted-200 dark:border-muted-700 dark:bg-muted-900 relative flex h-14 w-14 items-center justify-center rounded-xl border bg-white">
+                <img src="../img/illustrations/dashboards/delivery/meal-7.png" alt="Peperoni Slice"
+                  class="h-12 w-12 object-contain">
+                <div class="bg-red-500 absolute -bottom-1 -end-1 flex h-6 w-6 items-center justify-center rounded-full">
+                  <span class="font-sans text-[0.65rem] font-semibold text-white"> x3</span>
+                </div>
+              </div>
+              <div>
+                <p class="text-muted-800 dark:text-muted-100 font-sans text-sm">Peperoni Slice</p>
+                <p class="text-muted-400 font-sans text-xs"> unit price: $5.99</p>
+              </div>
+              <div class="ms-auto">
+                <p class="text-muted-800 dark:text-muted-100 font-sans text-sm font-semibold"> $17.97</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center gap-3">
+              <div
+                class="border-muted-200 dark:border-muted-700 dark:bg-muted-900 relative flex h-14 w-14 items-center justify-center rounded-xl border bg-white">
+                <img src="../img/illustrations/dashboards/delivery/meal-9.png" alt="Sashimi Special"
+                  class="h-12 w-12 object-contain">
+                <div class="bg-red-500 absolute -bottom-1 -end-1 flex h-6 w-6 items-center justify-center rounded-full">
+                  <span class="font-sans text-[0.65rem] font-semibold text-white"> x1</span>
+                </div>
+              </div>
+              <div>
+                <p class="text-muted-800 dark:text-muted-100 font-sans text-sm">Sashimi Special</p>
+                <p class="text-muted-400 font-sans text-xs"> unit price: $19.99</p>
+              </div>
+              <div class="ms-auto">
+                <p class="text-muted-800 dark:text-muted-100 font-sans text-sm font-semibold"> $19.99</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center gap-3">
+              <div
+                class="border-muted-200 dark:border-muted-700 dark:bg-muted-900 relative flex h-14 w-14 items-center justify-center rounded-xl border bg-white">
+                <img src="../img/illustrations/dashboards/delivery/meal-4.png" alt="Sweet n&#39; Donuts"
+                  class="h-12 w-12 object-contain">
+                <div
+                  class="bg-red  -500 absolute -bottom-1 -end-1 flex h-6 w-6 items-center justify-center rounded-full">
+                  <span class="font-sans text-[0.65rem] font-semibold text-white"> x1</span>
+                </div>
+              </div>
+              <div>
+                <p class="text-muted-800 dark:text-muted-100 font-sans text-sm">Sweet n&#39; Donuts</p>
+                <p class="text-muted-400 font-sans text-xs"> unit price: $9.99</p>
+              </div>
+              <div class="ms-auto">
+                <p class="text-muted-800 dark:text-muted-100 font-sans text-sm font-semibold"> $9.99</p>
+              </div>
+            </div>
+          </li><!--]-->
+        </ul>
+        <div class="border-muted-300 dark:border-muted-800 flex grow flex-col justify-end border-t py-4">
+          <ul class="my-4 space-y-2 font-sans">
+            <li>
+              <div class="flex items-center justify-between"><span class="text-sm">Subtotal:</span><span
+                  class="text-muted-500 dark:text-muted-400 text-sm font-medium"> $65.93</span></div>
+            </li>
+            <li>
+              <div class="flex items-center justify-between"><span class="text-sm">Taxes:</span><span
+                  class="text-muted-500 dark:text-muted-400 text-sm font-medium"> $4.12</span></div>
+            </li>
+            <li>
+              <div class="flex items-center justify-between"><span>Total:</span><span
+                  class="text-muted-800 dark:text-muted-100 text-xl font-semibold"> $70.05</span></div>
+            </li>
+          </ul>
+          <div class="mt-4 flex justify-between text-xs font-bold"><button type="button"
+              class="is-button rounded-xl text-muted-800 group !h-14 w-full !gap-3 bg-yellow-400 hover:!shadow-xl hover:!shadow-yellow-400/20"
+              data-v-71bb21a6><!--[--><span class="text-base font-medium">Checkout</span><svg
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                role="img" class="icon h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" style=""
+                width="1em" height="1em" viewBox="0 0 24 24" data-v-cd102a71>
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5 12h14m-7-7l7 7l-7 7" />
+              </svg><!--]--></button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Middle Section end -->
+
+  <!-- Booking Form Start -->
+
+  <!-- Bookin Form End -->
+
+  <!-- Contact us Form Start -->
+
+  <!-- Contact us Form End -->
+
+  <!-- Footer Section -->
+
+  <!-- Footer Section End -->
+
+  <script src="index.js"></script>
+</body>
+
+</html>
