@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tandoori Lu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+  <div class="grid sm:px-10 lg:grid-cols-2 lg:px-20 xl:px-32">
+    <div class="px-4 pt-8">
+      <p class="text-xl font-bold">Order Summary</p>
+      <p class="text-gray-400">Check your items. And select a suitable shipping method.</p>
+      <div class="mt-8 space-y-3 rounded-lg border bg-white px-2 py-4 sm:px-6">
+        <div class="flex flex-col rounded-lg bg-white sm:flex-row">
+          <img class="m-2 h-24 w-28 rounded-md border object-cover object-center"
+            src="https://www.cubesnjuliennes.com/wp-content/uploads/2022/12/Tandoori-Chicken-Recipe.jpg" alt="" />
+          <div class="flex w-full flex-col px-4 py-4">
+            <span class="font-semibold">Chicken Tandoori
+              <span class="text-gray-400">*2</span>
+            </span>
+            <span class="float-right text-gray-400">Some text description if necessary</span>
+            <p class="text-lg font-bold text-red-400">$138.99</p>
+          </div>
+        </div>
+
+        <div class="mt-6 border-t border-b py-2">
+          <div class="flex items-center justify-between">
+            <p class="text-sm font-medium text-gray-900">Subtotal</p>
+            <p class="font-semibold text-gray-900">$138.99</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p class="text-sm font-medium text-gray-900">Shipping</p>
+            <p class="font-semibold text-gray-900">$8.00</p>
+          </div>
+        </div>
+        <div class="mt-6 flex items-center justify-between">
+          <p class="text-sm font-medium text-gray-900">Total</p>
+          <p class="text-2xl font-semibold text-gray-900">$146.99</p>
+        </div>
+      </div>
+
+      <p class="mt-8 text-lg font-medium">Notes:</p>
+      <form class="mt-5 grid gap-6">
+        <div class="relative">
+          <textarea id="message" rows="4"
+            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Any detail regarding your order........"></textarea>
+
+        </div>
+
+      </form>
+    </div>
+    <div class="mt-10 bg-gray-50 px-4 pt-8 lg:mt-0">
+      <p class="text-2xl font-bold">Checkout</p>
+      <p class="text-gray-400 text-lg text-bold">Contact Information</p>
+      <div class="">
+
+        <div class="relative mb-4">
+          <input type="text" id="email" name="email"
+            class="w-full rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+            placeholder="Enter your email address" />
+
+        </div>
+        <!-- <p class="text-xl font-semibold">Shipping Details</p> -->
+
+        <div class="flex mb-4 ">
+          <div class="relative w-6/12 flex-shrink-0 mr-2">
+            <input type="text" id="firstName" name="firstName"
+              class="w-full rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+              placeholder="First Name" />
+          </div>
+          <input type="text" name="lastName"
+            class="w-full rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+            placeholder="Last Name" />
+        </div>
+
+        <div class="flex flex-col sm:flex-row">
+          <div class="relative flex-shrink-0 sm:w-4/12">
+            <input type="text" id="Address" name="billing-address"
+              class="w-full rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+              placeholder="Address" />
+
+          </div>
+          <input type="text" name="city" placeholder="City"
+            class="w-4/12 rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" />
+
+          <input type="text" name="billing-zip"
+            class=" w-4/12 rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+            placeholder="ZIP" />
+        </div>
+        <div class="flex items-center my-4">
+          <input id="default-checkbox" type="checkbox" value=""
+            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          <label for="default-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email me
+            with news and offers</label>
+        </div>
+
+        <p class="text-gray-400 text-lg text-bold">Payment Options</p>
+        <div class="flex py-4">
+          <div class="flex items-center h-5">
+            <input id="helper-radio" aria-describedby="helper-radio-text" type="radio" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          </div>
+          <div class="ml-2 text-sm">
+            <label for="helper-radio" class="font-medium text-gray-900 dark:text-gray-300">Cash on Delivery</label>
+            <p id="helper-radio-text" class="text-xs font-normal text-gray-500 dark:text-gray-300">Description</p>
+          </div>
+        </div>
+        <div class="flex py-4">
+          <div class="flex items-center h-5">
+            <input id="helper-radio" aria-describedby="helper-radio-text" type="radio" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          </div>
+          <div class="ml-2 text-sm">
+            <label for="helper-radio" class="font-medium text-gray-900 dark:text-gray-300">Second Method</label>
+            <p id="helper-radio-text" class="text-xs font-normal text-gray-500 dark:text-gray-300">Description</p>
+          </div>
+        </div>
+
+      </div>
+      <button class="mt-4 mb-8 w-full rounded-md bg-gray-900 px-6 py-3 font-medium text-white">Place Order</button>
+    </div>
+  </div>
+</body>
+
+</html>
