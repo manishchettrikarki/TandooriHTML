@@ -11,87 +11,69 @@
 </head>
 
 <body>
-  <section>
-    <div class="flex justify-center items-center flex-col mb-4">
-      <div
-        class="w-full h-full bg-[url('https://static.wixstatic.com/media/d919ff_1dfc9141f28a48c99b0a4ed0925f9628~mv2.jpg/v1/fill/w_1000,h_563,al_c,q_85,usm_0.66_1.00_0.01/d919ff_1dfc9141f28a48c99b0a4ed0925f9628~mv2.jpg')] bg-cover">
-        <div class="w-full h-full flex  justify-center items-center backdrop-brightness-50 py-5">
-          <div class="w-full px-4 lg:w-1/2 xl:w-6/12">
-            <div class="mb-12 max-w-[570px] lg:mb-0">
-              <h2 class="text-white mb-6 text-[50px] font-bold uppercase sm:text-[40px] lg:text-[60px] xl:text-[70px]">
-                Reserve Your Table
-              </h2>
-              <p class="text-white mb-9 text-base leading-relaxed">
-                You can also book a table by sending as email to
-                <a href="#">booking@tandoori.lu</a>
-              </p>
+  <section class="relative flex flex-wrap lg:h-screen lg:items-center">
+    <div class="w-full h-[80%] px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-4 lg:py-14 bg-gray-100">
+      <div class="mx-auto max-w-lg text-center">
+        <h1 class="text-2xl font-bold sm:text-3xl">Reserve Your Table</h1>
 
+        <p class="mt-4 text-gray-500">
+          You can also book a table by sending as email to
+          <a href="#">booking@tandoori.lu</a>
+        </p>
+      </div>
 
-            </div>
-          </div>
+      <form action="" class="mx-auto mb-0 mt-8 max-w-md space-y-4">
+        <div class="mb-6">
 
-          <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
+          <input type="text" id="fullName"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 shadow-md"
+            placeholder="Your Name" required>
+        </div>
+        <div class="mb-6">
+          <input type="email" id="email" placeholder="Your Email"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 shadow-md">
+        </div>
+        <div class="mb-6">
+          <input type="number" id="number" placeholder="Phone Number"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 shadow-md">
+        </div>
+        <div class="mb-6">
+          <input type="date" id="bookingDate"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-5000 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 shadow-md">
+        </div>
+        <div class="mb-6">
+          <select placeholder="Pick a Time" id="countries"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 shadow-md">
+            <option selected>Pick a Time</option>
+            <option value="12:00">12:00</option>
+            <option value="12:30">12:30</option>
+            <option value="13:00">13:00</option>
+            <option value="13:30">13:30</option>
+            <option value="14:00">14:00</option>
+            <option value="14:30">14:30</option>
+            <option value="15:00">15:00</option>
+            <option value="15:30">15:30</option>
+            <option value="16:00">16:00</option>
+          </select>
+        </div>
+        <div class="mb-6">
+          <textarea id="message" rows="4"
+            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 shadow-md"
+            placeholder="Write your message here..."></textarea>
 
-            <div
-              class="text-center block max-w-xl rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-              <h1 class="text-2xl font-bold mb-4">Reserve your Table</h1>
-              <p class="text-md font-semibold">You can also book a table by sending as email to</p>
-              <a href="#">booking@tandoori.lu</a>
-              <form>
-                <div class="mb-6">
-
-                  <input type="text" id="fullName"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Your Name" required>
-                </div>
-                <div class="mb-6">
-                  <input type="email" id="email" placeholder="Your Email"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                </div>
-                <div class="mb-6">
-                  <input type="number" id="number" placeholder="Phone Number"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                </div>
-                <div class="mb-6">
-                  <input type="date" id="bookingDate"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                </div>
-                <div class="mb-6">
-                  <select placeholder="Pick a Time" id="countries"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                    <option selected>Pick a Time</option>
-                    <option value="12:00">12:00</option>
-                    <option value="12:30">12:30</option>
-                    <option value="13:00">13:00</option>
-                    <option value="13:30">13:30</option>
-                    <option value="14:00">14:00</option>
-                    <option value="14:30">14:30</option>
-                    <option value="15:00">15:00</option>
-                    <option value="15:30">15:30</option>
-                    <option value="16:00">16:00</option>
-                  </select>
-                </div>
-                <div class="mb-6">
-                  <textarea id="message" rows="4"
-                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Write your message here..."></textarea>
-
-                </div>
-
-                <button type="submit"
-                  class="text-white bg-black hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-md uppercase w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Book
-                  Your Table</button>
-              </form>
-            </div>
-
-
-          </div>
         </div>
 
-      </div>
-    </div>
+        <button type="submit"
+          class="text-white bg-black hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-md uppercase w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 shadow-md">Book
+          Your Table</button>
+      </form>
     </div>
 
+    <div class="relative h-[80%] w-[80%] sm:h-96 lg:h-[80%] lg:w-1/2">
+      <img alt="Welcome"
+        src="https://images.unsplash.com/photo-1577194509876-4bb24787a641?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+        class="absolute inset-0 h-full w-full object-cover" />
+    </div>
   </section>
 
 </body>
